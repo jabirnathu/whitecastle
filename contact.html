@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Castle Consulting</title>
+    <meta name="description" content="Book your fit call with White Castle Consulting. We help SMB owners implement systems and execute strategy for sustainable growth.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link">White Castle</a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html#reality" class="nav-link">The Reality</a>
+                <a href="index.html#how-we-work" class="nav-link">How We Work</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="#contact-form" class="nav-cta">Book a Fit Call</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Ready to Scale Your Business?</h1>
+                <p class="hero-subtitle">Start with a no-pressure fit conversation to explore your growth opportunities and see if we're right for each other.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="section contact-options">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="contact-icon">📞</div>
+                        <h3>Book a Fit Call</h3>
+                        <p>90-minute conversation about your challenges and whether we're the right fit</p>
+                        <a href="#contact-form" class="btn-primary">Schedule Now</a>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">✉️</div>
+                        <h3>Send Us a Message</h3>
+                        <p>Quick questions or want to learn more about our approach</p>
+                        <a href="mailto:hello@whitecastleconsulting.com" class="btn-secondary">Email Us</a>
+                    </div>
+                    <div class="contact-method">
+                        <div class="contact-icon">💼</div>
+                        <h3>Partnership Inquiries</h3>
+                        <p>Exploring strategic partnerships or referral opportunities</p>
+                        <a href="mailto:partnerships@whitecastleconsulting.com" class="btn-secondary">Partner With Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Form Section -->
+    <section id="contact-form" class="section contact-form-section">
+        <div class="container">
+            <div class="section-content">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Book Your Fit Call</h2>
+                        <p>Tell us about your business and challenges. We'll explore whether there's a mutual fit for working together.</p>
+                    </div>
+
+                    <form id="contactForm" class="fit-call-form">
+                        <div class="form-section">
+                            <h3>About You</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name <span class="required">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name <span class="required">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required">*</span></label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number <span class="required">*</span></label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">Your Title/Role <span class="required">*</span></label>
+                                <input type="text" id="title" name="title" placeholder="e.g., CEO, Founder, President" required>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>About Your Business</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="company">Company Name <span class="required">*</span></label>
+                                    <input type="text" id="company" name="company" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="industry">Industry <span class="required">*</span></label>
+                                    <select id="industry" name="industry" required>
+                                        <option value="">Select your industry</option>
+                                        <option value="Technology/SaaS">Technology/SaaS</option>
+                                        <option value="Professional Services">Professional Services</option>
+                                        <option value="Manufacturing">Manufacturing</option>
+                                        <option value="Healthcare">Healthcare</option>
+                                        <option value="Financial Services">Financial Services</option>
+                                        <option value="Retail/E-commerce">Retail/E-commerce</option>
+                                        <option value="Construction">Construction</option>
+                                        <option value="Real Estate">Real Estate</option>
+                                        <option value="Food & Beverage">Food & Beverage</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="revenue">Annual Revenue <span class="required">*</span></label>
+                                    <select id="revenue" name="revenue" required>
+                                        <option value="">Select revenue range</option>
+                                        <option value="Under $1M">Under $1M</option>
+                                        <option value="$1M - $5M">$1M - $5M</option>
+                                        <option value="$5M - $10M">$5M - $10M</option>
+                                        <option value="$10M - $25M">$10M - $25M</option>
+                                        <option value="$25M - $50M">$25M - $50M</option>
+                                        <option value="Over $50M">Over $50M</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="employees">Number of Employees <span class="required">*</span></label>
+                                    <select id="employees" name="employees" required>
+                                        <option value="">Select team size</option>
+                                        <option value="1-10">1-10</option>
+                                        <option value="11-25">11-25</option>
+                                        <option value="26-50">26-50</option>
+                                        <option value="51-100">51-100</option>
+                                        <option value="101-200">101-200</option>
+                                        <option value="200+">200+</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Your Challenges</h3>
+                            <div class="form-group">
+                                <label for="biggestChallenge">What's your biggest operational challenge right now? <span class="required">*</span></label>
+                                <select id="biggestChallenge" name="biggestChallenge" required>
+                                    <option value="">Select your primary challenge</option>
+                                    <option value="Strategy execution gap">Strategy execution gap</option>
+                                    <option value="Scaling operations">Scaling operations</option>
+                                    <option value="Team performance issues">Team performance issues</option>
+                                    <option value="Process inefficiencies">Process inefficiencies</option>
+                                    <option value="Growth bottlenecks">Growth bottlenecks</option>
+                                    <option value="Leadership capacity">Leadership capacity</option>
+                                    <option value="Financial management">Financial management</option>
+                                    <option value="Technology/systems">Technology/systems</option>
+                                    <option value="Customer experience">Customer experience</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="urgency">How urgent is this challenge? <span class="required">*</span></label>
+                                <select id="urgency" name="urgency" required>
+                                    <option value="">Select urgency level</option>
+                                    <option value="Critical - Immediate attention needed">Critical - Immediate attention needed</option>
+                                    <option value="High - Needs addressing within 30 days">High - Needs addressing within 30 days</option>
+                                    <option value="Medium - Important but not urgent">Medium - Important but not urgent</option>
+                                    <option value="Low - Planning for future">Low - Planning for future</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="details">Tell us more about your situation (optional)</label>
+                                <textarea id="details" name="details" rows="4" placeholder="What specific symptoms are you experiencing? What have you tried before? What does success look like to you?"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>Next Steps</h3>
+                            <div class="form-group">
+                                <label for="timeline">When would you like to schedule your fit call? <span class="required">*</span></label>
+                                <select id="timeline" name="timeline" required>
+                                    <option value="">Select preferred timing</option>
+                                    <option value="This week">This week</option>
+                                    <option value="Next week">Next week</option>
+                                    <option value="Within 2 weeks">Within 2 weeks</option>
+                                    <option value="Within a month">Within a month</option>
+                                    <option value="Just exploring options">Just exploring options</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="referral">How did you hear about us? (optional)</label>
+                                <select id="referral" name="referral">
+                                    <option value="">Select source</option>
+                                    <option value="Google search">Google search</option>
+                                    <option value="LinkedIn">LinkedIn</option>
+                                    <option value="Referral from colleague">Referral from colleague</option>
+                                    <option value="Industry event">Industry event</option>
+                                    <option value="Podcast/Media">Podcast/Media</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn-primary btn-large">
+                                <span class="button-text">Book My Fit Call</span>
+                                <span class="button-loading" style="display: none;">Submitting...</span>
+                            </button>
+                            <p class="form-note">We'll respond within 24 hours to schedule your call.</p>
+                        </div>
+
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </form>
+
+                    <!-- Trust Indicators -->
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <span class="trust-icon">🔒</span>
+                            <span>Your information is confidential</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">⚡</span>
+                            <span>No sales pressure</span>
+                        </div>
+                        <div class="trust-item">
+                            <span class="trust-icon">✅</span>
+                            <span>Actionable insights guaranteed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section faq-section">
+        <div class="container">
+            <div class="section-content">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>What happens in a fit call?</h3>
+                        <p>We conduct a 90-minute conversation about your business challenges, growth goals, and current situation. We'll explore whether there's mutual alignment and if we can help you achieve your objectives.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Is there any cost for the fit call?</h3>
+                        <p>The initial fit conversation is complimentary. Our goal is to understand your situation and determine if there's mutual alignment for a partnership.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What size businesses do you work with?</h3>
+                        <p>We typically work with SMBs generating $1M-$50M in annual revenue. These businesses have proven product-market fit but need operational structure to scale effectively.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How quickly can we get started?</h3>
+                        <p>Most fit calls are scheduled within 1-2 weeks. If there's good alignment, we can typically begin our engagement within 30 days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>White Castle Consulting</h3>
+                    <p>Business Management as a Service for SMB leaders who are ready to scale.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="#contact-form">Book Fit Call</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 White Castle Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom styles for Contact page -->
+    <style>
+        .contact-options {
+            background-color: var(--gray-50);
+        }
+        
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .contact-method {
+            background-color: var(--primary-white);
+            padding: var(--space-xl);
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            border: 1px solid var(--gray-200);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .contact-icon {
+            font-size: 3rem;
+            margin-bottom: var(--space-md);
+        }
+        
+        .contact-method h3 {
+            font-size: 1.25rem;
+            margin-bottom: var(--space-sm);
+            color: var(--primary-black);
+        }
+        
+        .contact-method p {
+            margin-bottom: var(--space-md);
+            color: var(--gray-600);
+        }
+        
+        .contact-form-section {
+            background-color: var(--primary-white);
+        }
+        
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--primary-white);
+            border-radius: var(--border-radius-lg);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--gray-200);
+        }
+        
+        .form-header {
+            text-align: center;
+            margin-bottom: var(--space-2xl);
+        }
+        
+        .form-header h2 {
+            color: var(--primary-black);
+            margin-bottom: var(--space-sm);
+        }
+        
+        .form-header p {
+            color: var(--gray-600);
+            font-size: 1.125rem;
+        }
+        
+        .fit-call-form .form-section {
+            margin-bottom: var(--space-xl);
+            padding-bottom: var(--space-lg);
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .fit-call-form .form-section:last-of-type {
+            border-bottom: none;
+        }
+        
+        .fit-call-form .form-section h3 {
+            font-size: 1.25rem;
+            color: var(--accent-blue);
+            margin-bottom: var(--space-md);
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+            margin-bottom: var(--space-md);
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: var(--space-md);
+        }
+        
+        .form-group label {
+            font-weight: 500;
+            color: var(--gray-700);
+            margin-bottom: var(--space-xs);
+            font-size: 0.9rem;
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: var(--space-sm);
+            border: 2px solid var(--gray-200);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            font-family: var(--font-primary);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent-blue);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .form-group select {
+            cursor: pointer;
+        }
+        
+        .form-actions {
+            text-align: center;
+            margin-top: var(--space-xl);
+        }
+        
+        .form-actions .btn-primary {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .form-note {
+            color: var(--gray-500);
+            font-size: 0.875rem;
+            margin: 0;
+        }
+        
+        .form-message {
+            margin-top: var(--space-md);
+            padding: var(--space-md);
+            border-radius: var(--border-radius);
+            text-align: center;
+            font-weight: 500;
+        }
+        
+        .form-message.success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .form-message.error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--space-xl);
+            margin-top: var(--space-xl);
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--gray-200);
+            flex-wrap: wrap;
+        }
+        
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+            color: var(--gray-600);
+            font-size: 0.875rem;
+        }
+        
+        .trust-icon {
+            color: var(--accent-blue);
+        }
+        
+        .faq-section {
+            background-color: var(--gray-50);
+        }
+        
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--space-xl);
+        }
+        
+        .faq-item {
+            background-color: var(--primary-white);
+            padding: var(--space-lg);
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--gray-200);
+        }
+        
+        .faq-item h3 {
+            font-size: 1.125rem;
+            margin-bottom: var(--space-sm);
+            color: var(--primary-black);
+        }
+        
+        .faq-item p {
+            margin: 0;
+            color: var(--gray-600);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .button-loading {
+            display: none;
+        }
+        
+        /* Mobile adjustments */
+        @media (max-width: 768px) {
+            .contact-methods {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-container {
+                padding: var(--space-lg);
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+            
+            .trust-indicators {
+                flex-direction: column;
+                gap: var(--space-md);
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize contact form enhancements
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeContactForm();
+        });
+    </script>
+</body>
+</html>
