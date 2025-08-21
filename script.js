@@ -61,11 +61,11 @@ function initializeNavigation() {
         
         // Add background opacity based on scroll
         if (scrollTop > 50) {
-            navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+            navbar.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 100%)';
+            navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
         } else {
-            navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = '0 1px 10px rgba(0, 0, 0, 0.05)';
+            navbar.style.background = 'linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%)';
+            navbar.style.boxShadow = '0 1px 10px rgba(0, 0, 0, 0.2)';
         }
         
         lastScrollTop = scrollTop;

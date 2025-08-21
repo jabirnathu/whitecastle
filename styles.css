@@ -153,9 +153,9 @@ p {
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.95);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--gray-200);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     z-index: 1000;
     transition: all 0.3s ease;
 }
@@ -172,8 +172,9 @@ p {
     font-family: var(--font-display);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary-black);
+    color: var(--primary-white);
     text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .nav-menu {
@@ -183,14 +184,15 @@ p {
 }
 
 .nav-link {
-    color: var(--gray-700);
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.2s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .nav-link:hover {
-    color: var(--accent-blue);
+    color: var(--primary-white);
 }
 
 .nav-cta {
@@ -218,16 +220,19 @@ p {
 .nav-toggle span {
     width: 25px;
     height: 2px;
-    background-color: var(--gray-700);
+    background-color: var(--primary-white);
     transition: all 0.3s ease;
 }
 
 /* Hero Section */
 .hero {
-    padding: 8rem 0 4rem;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%), url('images/whitecastle-hero.jpg') center/cover no-repeat;
+    padding: 10rem 0 6rem;
+    min-height: 85vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%), url('images/hemlockgroth - hero.jpg') center/cover no-repeat;
     text-align: center;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .hero-content {
@@ -270,7 +275,7 @@ p {
 
 .section-title {
     text-align: center;
-    margin-bottom: var(--space-2xl);
+    margin-bottom: var(--space-xl);
     font-size: 2.75rem;
 }
 

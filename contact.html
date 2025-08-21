@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - White Castle Consulting</title>
-    <meta name="description" content="Book your fit call with White Castle Consulting. We help SMB owners implement systems and execute strategy for sustainable growth.">
+    <title>Contact Us - Hemlock Growth Partners</title>
+    <meta name="description" content="Book your fit call with Hemlock Growth Partners. We help SMB owners implement systems and execute strategy for sustainable growth.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +19,16 @@
     <nav class="navbar">
         <div class="container">
             <div class="nav-brand">
-                <a href="index.html" class="brand-link">White Castle</a>
+                <a href="index.html" class="brand-link">
+                    <img src="images/Hemlock-logo-white.png" alt="Hemlock Growth Partners" class="brand-logo">
+                </a>
             </div>
             <div class="nav-menu" id="navMenu">
-                <a href="index.html#reality" class="nav-link">The Reality</a>
-                <a href="index.html#how-we-work" class="nav-link">How We Work</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="how-we-work.html" class="nav-link">Partnership Models</a>
                 <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link">Contact</a>
-                <a href="#contact-form" class="nav-cta">Book a Fit Call</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+                <a href="#contact-form" class="nav-cta">Get Started</a>
             </div>
             <div class="nav-toggle" id="navToggle">
                 <span></span>
@@ -37,7 +39,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero contact-hero">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">Ready to Scale Your Business?</h1>
@@ -290,15 +292,16 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <h3>White Castle Consulting</h3>
-                    <p>Business Management as a Service for SMB leaders who are ready to scale.</p>
+                    <h3>Hemlock Growth Partners</h3>
+                    <p>Selective growth partnerships for exceptional SMBs. Limited engagements, unlimited potential.</p>
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
                         <h4>Company</h4>
+                        <a href="services.html">Services</a>
+                        <a href="how-we-work.html">Partnership Models</a>
                         <a href="about.html">About</a>
                         <a href="contact.html">Contact</a>
-                        <a href="#contact-form">Book Fit Call</a>
                     </div>
                     <div class="footer-column">
                         <h4>Legal</h4>
@@ -308,13 +311,39 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 White Castle Consulting. All rights reserved.</p>
+                <p>&copy; 2025 Hemlock Growth Partners. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Custom styles for Contact page -->
     <style>
+        /* Logo styling */
+        .brand-logo {
+            height: 60px;
+            width: auto;
+            display: block;
+        }
+        /* Hero */
+        .contact-hero {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.4) 100%), url('images/hemlockgroth - hero.jpg') center/cover no-repeat;
+            color: var(--primary-white);
+            padding: 8rem 0 4rem;
+            min-height: auto;
+        }
+
+        .contact-hero .hero-title {
+            color: var(--primary-white);
+            font-size: 3.5rem;
+        }
+
+        .contact-hero .hero-subtitle {
+            color: var(--gray-300);
+            font-size: 1.25rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
         .contact-options {
             background-color: var(--gray-50);
         }
